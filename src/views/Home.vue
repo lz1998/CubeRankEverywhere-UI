@@ -1,25 +1,15 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    home
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import {test} from '@/api/test'
-import {login} from '@/api/group'
-
+// 这是主页面
 export default {
   name: 'home',
   components: {
-    HelloWorld
-  },
-  mounted() {
-    login("ecust","123").then(res=>{
-      console.log(res)
-    })
   }
 }
 </script>
